@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane fx:id="gamePane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" styleClass="bodybg" stylesheets="@background.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.stickheroapplication.MainGameController">
+   <children>
+      <ImageView fx:id="character" fitHeight="79.0" fitWidth="82.0" layoutX="85.0" layoutY="203.0" pickOnBounds="true" preserveRatio="true" y="37.0">
+         <image>
+            <Image url="@images/H-1.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="score" layoutX="276.0" layoutY="20.0" text="00">
+         <font>
+            <Font name="Avenir Black" size="40.0" />
+         </font>
+      </Label>
+      <Pane fx:id="gameOver" layoutX="100.0" layoutY="17.0" prefHeight="367.0" prefWidth="400.0">
+         <children>
+            <Label fx:id="score1" layoutX="249.0" layoutY="117.0" prefHeight="0.0" prefWidth="26.0" text="00">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <Label layoutX="18.0" layoutY="14.0" prefHeight="93.0" prefWidth="369.0" text="GAME OVER " textAlignment="CENTER">
+               <font>
+                  <Font size="64.0" />
+               </font>
+            </Label>
+            <Label layoutX="114.0" layoutY="117.0" prefHeight="15.0" prefWidth="131.0" text="Your Score:">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <Label layoutX="114.0" layoutY="152.0" prefHeight="35.0" prefWidth="131.0" text="HighScore :">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <Label fx:id="highScoreLabel" layoutX="249.0" layoutY="152.0" text="00">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <Button fx:id="restart" layoutX="145.0" layoutY="187.0" mnemonicParsing="false" onAction="#restartButtonClicked" stylesheets="@StickHeroCss.css" text="RESTART" textFill="WHITE">
+               <effect>
+                  <DropShadow />
+               </effect>
+               <font>
+                  <Font name="Comic Sans MS" size="18.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="DEFAULT" />
+               </cursor>
+            </Button>
+         </children>
+      </Pane>
+   </children>
+</Pane>

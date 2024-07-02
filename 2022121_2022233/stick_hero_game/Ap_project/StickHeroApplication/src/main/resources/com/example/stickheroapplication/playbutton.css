@@ -1,0 +1,13 @@
+.button{
+    -fx-background-radius: 145;
+    -fx-pref-width: 145;
+    -fx-pref-height: 145;
+    -fx-background-color: TRANSPARENT;
+}
+
+.button:hover{
+    -fx-background-radius: 145;
+    -fx-pref-width: 145;
+    -fx-pref-height: 145;
+    -fx-background-color: rgba(0, 0, 0, 0.27);
+}

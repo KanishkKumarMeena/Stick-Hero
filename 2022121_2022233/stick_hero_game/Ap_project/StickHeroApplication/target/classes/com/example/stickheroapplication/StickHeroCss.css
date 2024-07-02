@@ -1,0 +1,22 @@
+#exitButton{
+    -fx-background-image: url("images/Exit.png");
+    -fx-background-color: TRANSPARENT;
+    -fx-alignment: center;
+    -fx-border-radius: 50,50,50,50;
+    -fx-background-size: 100% 100%;
+    -fx-background-radius: 100;
+}
+
+#gameOver{
+    -fx-background-color: WHITE;
+}
+#restart{
+    -fx-background-color: rgb(255, 0, 0);
+    -fx-alignment: center;
+    -fx-background-radius: 55;
+    -fx-pref-width: 110;
+    -fx-pref-height: 110;
+}
+#restart:hover{
+    -fx-background-color: rgba(255, 0, 0, 0.65);
+}

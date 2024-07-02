@@ -1,0 +1,6 @@
+.startbg{
+    -fx-background-image: url("images/STICKHERO-2.gif");
+    -fx-background-size: 100% 100%;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+}
